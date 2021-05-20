@@ -7,7 +7,11 @@ JAVA GUI Project Using AWT
 <hr>
 <h2 align="center"> Output of the GUI Project </h2>
 
+<div align="center">
+
 ![SS of GUI](https://github.com/FahimFBA/Calculator-AWT/blob/main/img/GUI.png?raw=yes)
+
+</div>
 
 <hr>
 <h2 align="center"> The Complete Project </h2>
