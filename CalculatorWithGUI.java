@@ -95,7 +95,7 @@ class CalculatorWithGUI extends Frame implements ActionListener {
   public static void main(String args[]) {
 
     CalculatorWithGUI m = new CalculatorWithGUI();
-    m.setTitle("My Calculator");
+    m.setTitle("Calculator using Java (AWT)");
     m.setSize(250, 300);
     m.setBackground(Color.CYAN);
     m.setForeground(Color.DARK_GRAY);
