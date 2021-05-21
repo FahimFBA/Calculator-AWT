@@ -6,7 +6,7 @@ class CalculatorWithGUI extends Frame implements ActionListener {
   TextField tfInput;
   Panel panel;
 
-  String btnString[] = { "7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "*", "C", "0", "=", "/" };
+  String btnString[] = { "7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "*", "C", "0", "=", "÷" };
   Button btn[] = new Button[16];
   int num1 = 0, num2 = 0, result = 0;
   char charSymbol;
@@ -58,8 +58,8 @@ class CalculatorWithGUI extends Frame implements ActionListener {
       charSymbol = '*';
       num1 = Integer.parseInt(tfInput.getText());
       tfInput.setText("");
-    } else if (str.equals("/")) {
-      charSymbol = '/';
+    } else if (str.equals("÷")) {
+      charSymbol = '÷';
       num1 = Integer.parseInt(tfInput.getText());
       tfInput.setText("");
     } else if (str.equals("=")) {
@@ -77,7 +77,7 @@ class CalculatorWithGUI extends Frame implements ActionListener {
         case '*':
           result = num1 * num2;
           break;
-        case '/':
+        case '÷':
           result = num1 / num2;
           break;
       }
