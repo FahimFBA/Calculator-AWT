@@ -9,7 +9,7 @@ JAVA GUI Project Using AWT
 
 <div align="center">
 
-![SS of GUI](https://github.com/FahimFBA/Calculator-AWT/blob/main/img/GUI.png?raw=yes)
+![SS of GUI](https://github.com/FahimFBA/Calculator-AWT/blob/main/img/GUI_Main.png?raw=yes)
 
 </div>
 
