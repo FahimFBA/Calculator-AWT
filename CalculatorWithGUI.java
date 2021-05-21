@@ -13,7 +13,7 @@ class CalculatorWithGUI extends Frame implements ActionListener {
 
   public CalculatorWithGUI() {
 
-    Font f = new Font("Cambria", Font.BOLD, 18);
+    Font f = new Font("MONOSPACED", Font.BOLD, 18);
 
     tfInput = new TextField(10);
     tfInput.setFont(f);
