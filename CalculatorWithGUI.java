@@ -6,8 +6,8 @@ class CalculatorWithGUI extends Frame implements ActionListener {
   TextField textInput;
   Panel panel;
 
-  String btnString[] = { "7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "*", "C", "0", "=", "÷" };
-  Button btn[] = new Button[16];
+  String[] btnString = { "7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "*", "C", "0", "=", "÷" };
+  Button[] btn = new Button[16];
   int num1 = 0, num2 = 0, result = 0;
   char charSymbol;
 
@@ -45,54 +45,47 @@ class CalculatorWithGUI extends Frame implements ActionListener {
 
     String str = ae.getActionCommand();
 
-    if (str.equals("+")) {
-
-      charSymbol = '+';
-      num1 = Integer.parseInt(textInput.getText());
-      textInput.setText("");
-    } else if (str.equals("-")) {
-      charSymbol = '-';
-      num1 = Integer.parseInt(textInput.getText());
-      textInput.setText("");
-    } else if (str.equals("*")) {
-      charSymbol = '*';
-      num1 = Integer.parseInt(textInput.getText());
-      textInput.setText("");
-    } else if (str.equals("÷")) {
-      charSymbol = '÷';
-      num1 = Integer.parseInt(textInput.getText());
-      textInput.setText("");
-    } else if (str.equals("=")) {
-
-      num2 = Integer.parseInt(textInput.getText());
-
-      switch (charSymbol) {
-
-        case '+':
-          result = num1 + num2;
-          break;
-        case '-':
-          result = num1 - num2;
-          break;
-        case '*':
-          result = num1 * num2;
-          break;
-        case '÷':
-          result = num1 / num2;
-          break;
+    switch (str) {
+      case "+" -> {
+        charSymbol = '+';
+        num1 = Integer.parseInt(textInput.getText());
+        textInput.setText("");
       }
-      textInput.setText(result + "");
-      result = 0;
-    } else if (str.equals("C")) {
-
-      textInput.setText("");
-      num1 = num2 = result = 0;
-    } else {
-      textInput.setText(textInput.getText() + str);
+      case "-" -> {
+        charSymbol = '-';
+        num1 = Integer.parseInt(textInput.getText());
+        textInput.setText("");
+      }
+      case "*" -> {
+        charSymbol = '*';
+        num1 = Integer.parseInt(textInput.getText());
+        textInput.setText("");
+      }
+      case "÷" -> {
+        charSymbol = '÷';
+        num1 = Integer.parseInt(textInput.getText());
+        textInput.setText("");
+      }
+      case "=" -> {
+        num2 = Integer.parseInt(textInput.getText());
+        switch (charSymbol) {
+          case '+' -> result = num1 + num2;
+          case '-' -> result = num1 - num2;
+          case '*' -> result = num1 * num2;
+          case '÷' -> result = num1 / num2;
+        }
+        textInput.setText(result + "");
+        result = 0;
+      }
+      case "C" -> {
+        textInput.setText("");
+        num1 = num2 = result = 0;
+      }
+      default -> textInput.setText(textInput.getText() + str);
     }
   }
 
-  public static void main(String args[]) {
+  public static void main(String[] args) {
 
     CalculatorWithGUI m = new CalculatorWithGUI();
     m.setTitle("Calculator using Java (AWT)");
