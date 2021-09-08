@@ -1,4 +1,4 @@
-<h1 align="center">
+<h1>
 JAVA GUI Project Using AWT
 </h1>
 
