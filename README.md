@@ -1,11 +1,10 @@
-<h1>
-JAVA GUI Project Using AWT
-</h1>
+
+# JAVA GUI Project Using AWT
+
 
 <br>
 
-<hr>
-<h2 align="center"> Output of the GUI Project </h2>
+## Output of the GUI Project 
 
 
 
@@ -14,6 +13,6 @@ JAVA GUI Project Using AWT
 
 
 <hr>
-<h2 align="center"> The Complete Project </h2>
+## The Complete Project 
 
 ![SS From Pop! OS](https://github.com/FahimFBA/Calculator-AWT/blob/main/img/pop_OS.png?raw=yes)
