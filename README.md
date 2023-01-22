@@ -2,8 +2,6 @@
 JAVA GUI Project Using AWT
 </h1>
 
-<br>
-
 <hr>
 <h2 align="center"> Output of the GUI Project </h2>
 
