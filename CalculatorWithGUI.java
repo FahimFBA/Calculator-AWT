@@ -9,7 +9,7 @@ class CalculatorWithGUI extends Frame implements ActionListener {
   JTextField textInput;
   JPanel panel;
 
-  String[] btnString = { "7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "*", "C", "0", "=", "÷", "^", "√", "%", "⌫"};
+  String[] btnString = { "7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "*", "C", "0", "=", "÷", "^", "√", "%", "\u232b"};
 
   int n = 20; //number of buttons
   JButton[] btn = new JButton[n];
@@ -87,7 +87,7 @@ class CalculatorWithGUI extends Frame implements ActionListener {
         num1 = parseDouble(textInput.getText());
         textInput.setText("");
       }
-      case "⌫" -> {
+      case "\u232b" -> {
         String theText = textInput.getText();
         if (theText.length() == 0) {
           result = "";
